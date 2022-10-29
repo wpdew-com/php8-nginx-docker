@@ -1,4 +1,4 @@
-# php8-nginx-docker laravel
+# php8-nginx-docker Codeigniter
 PHP 8 + JIT development environment enabled, Nginx, MySQL DBMS and Adminer
 
 **Prerequisites:** Have Docker and Docker-compose installed.
