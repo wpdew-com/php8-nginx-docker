@@ -1,4 +1,4 @@
-# php8-nginx-docker
+# php8-nginx-docker for codeigniter4 
 Ambiente de desenvolvimento PHP 8 + JIT habilitado, Nginx, SGBD MySQL e Adminer
 
 **Pré-requisitos:** Ter o Docker e Docker-compose instalados.
