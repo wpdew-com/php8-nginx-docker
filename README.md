@@ -16,7 +16,6 @@ After installing Docker and Docker-compose, follow the procedures:
 
 ```
 git clone https://github.com/youreacc/youre_forked_repo .
-
 ```
 
 3. Access the directory where you saved the repository clone
@@ -37,7 +36,6 @@ Access the web tool to manage the database in the MySQL DBMS, access http://loca
 2. Go to directory src and install Laravel `cd src`
 ```
 git clone https://github.com/laravel/laravel.git .
-
 ```
 3. Edit env and run composer `composer update`
 4. After installation, generate a new application key `php artisan key:generate`
