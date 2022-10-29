@@ -15,7 +15,7 @@ After installing Docker and Docker-compose, follow the procedures:
 2. Clone the forked repository
 
 ```
-git clone https://github.com/youreacc/youre_forked_repo .
+git clone https://github.com/youre_account/youre_forked_repo .
 ```
 
 3. Access the directory where you saved the repository clone
