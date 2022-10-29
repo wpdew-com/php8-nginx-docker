@@ -1,27 +1,42 @@
-# php8-nginx-docker for codeigniter4 
-Ambiente de desenvolvimento PHP 8 + JIT habilitado, Nginx, SGBD MySQL e Adminer
+# php8-nginx-docker laravel
+PHP 8 + JIT development environment enabled, Nginx, MySQL DBMS and Adminer
 
-**Pré-requisitos:** Ter o Docker e Docker-compose instalados.
+**Prerequisites:** Have Docker and Docker-compose installed.
 
 
-[Instalando Docker no Windows 10](https://mundodacomputacaointegral.blogspot.com/2019/10/instalando-o-docker-no-windows.html)
+[Installing Docker on Windows 10](https://mundodacomputacaointegral.blogspot.com/2019/10/instalando-o-docker-no-windows.html)
 
-[Instalando Docker e Docker-compose no Linux (qualquer distro)](https://mundodacomputacaointegral.blogspot.com/2019/10/instalando-docker-e-docker-compose-no-Linux.html)
+[Installing Docker and Docker-compose on Linux (any distro)](https://mundodacomputacaointegral.blogspot.com/2019/10/instalando-docker-e-docker-compose-no-Linux.html)
 
-Após ter instalado o Docker e Docker-compose, segue os procedimentos: 
+After installing Docker and Docker-compose, follow the procedures:
 
-1. Fork do repositório
+1. Fork this repository
 
-2. Clonar o repositório forkado
+2. Clone the forked repository
 
-3. Acessar o diretório onde salvou o clone do repositório
+```
+git clone https://github.com/youre_account/youre_forked_repo .
+```
 
-4. Execute `docker-compose up -d`
+3. Access the directory where you saved the repository clone
 
-O diretório src do HOST é o volume mapeado no diretório /var/www/html do CONTAINER. Então, é no diretório src que deve salvar os arquivos .php.
+4. Run `docker-compose up -d` for start server
 
-No browser http://localhost/info.php e veja o JIT e outras extensões habilitadas do PHP.
+The HOST's src directory is the volume mapped to the CONTAINER's /var/www/html directory. So, it is in the src directory that you must save the .php files.
 
-Acessar a ferramenta web para gerenciar o banco de dados no SGBD MySQL, acesse http://localhost:8080 as credencias de acesso, encontra-se no arquivo docker-compose.yml
+Browse `http://localhost/info.php` and see PHP enabled extensions. Browse `http://localhost/` and see Hellow world
 
-Feito!
+5. Run `docker-compose down` for stop server
+
+Access the web tool to manage the database in the MySQL DBMS, access http://localhost:8080 the access credentials, found in the docker-compose.yml file
+
+## Install Codeigniter
+
+1. Delete everything from directory
+2. Go to directory src and install Codeigniter `cd src`
+```
+git clone https://github.com/codeigniter4/CodeIgniter4 .
+```
+3. Edit env and run composer `composer update`
+
+Done!
