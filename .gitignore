@@ -1,0 +1,4 @@
+db/
+src/*
+!src/info.php
+!src/index.php
