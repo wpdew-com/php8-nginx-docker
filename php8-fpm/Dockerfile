@@ -11,6 +11,11 @@ RUN apt-get update && apt-get install -y \
     unzip
 RUN docker-php-ext-install zip
 
+RUN apt-get -y update \
+    && apt-get install -y libicu-dev \ 
+    && docker-php-ext-configure intl \
+    && docker-php-ext-install intl
+
 # RUN useradd -G www-data,root -u $uid -d /home/$user $user
 # RUN mkdir -p /home/$user/.composer && \
 #     chown -R $user:$user /home/$user
